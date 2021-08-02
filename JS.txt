@@ -1,0 +1,24 @@
+import { LightningElement,track} from 'lwc';
+
+export default class PropDemo extends LightningElement 
+{
+ @track firstNumber;
+ @track secondNumber;
+ resultValue;
+ handleChange1(event)
+ {
+     this.firstNumber = parseInt(event.target.value);
+ }
+ handleChange2(event)
+ {
+     this.secondNumber = parseInt(event.target.value);
+ }
+ handleAdd()
+ {
+     this.resultValue = parseInt(this.firstNumber)+parseInt(this.secondNumber);
+ }
+ handleSub()
+ {
+     this.resultValue = parseInt(this.firstNumber)-parseInt(this.secondNumber);
+ }
+}

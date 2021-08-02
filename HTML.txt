@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-box slds-theme_shade">
+      <lightning-input type="number" name="input1" label="Number 1" onchange={handleChange1} value={firstNumber}></lightning-input>
+      <lightning-input type="number" name="input2" label="Number 2" onchange={handleChange2} value={secondNumber}></lightning-input>
+    </div>
+    <p>Result Value is  : {resultValue}</p>
+    <div class="slds-box slds-theme_shade">
+        <lightning-button label="Add" variant="brand" onclick={handleAdd}></lightning-button>
+        <lightning-button label="Sub" variant="destructive" onclick={handleSub}></lightning-button>
+    </div>
+</template>
